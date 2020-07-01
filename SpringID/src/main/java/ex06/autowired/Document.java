@@ -1,4 +1,4 @@
-package ex06.autorwired;
+package ex06.autowired;
 
 public class Document {
 	

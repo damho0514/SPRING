@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:context="http://www.springframework.org/schema/context"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
-	<bean id="doc1" class="ex06.autowired.Document"/>
 	<!-- 
 	1. 네임스페이스 context를 추가
 	2. anotation-config태그를 추가해서 자동주입 명령을 사용할수 있게 한다.
 	 -->
+	<context:annotation-config/>
+	<bean id="doc1" class="ex06.autowired.Document"/>
+	
+	<bean id="doc2" class="ex06.autowired.Document"/>
 	<!-- 자바문서에서 어노테이션방식으로 의존객체 자동주입 -->
 	<bean id="printer" class="ex06.autowired.Printer">
 		<!-- <constructor-arg ref="doc1"/> -->
 	</bean>
+	
+	<bean id = "printer2" class="ex06.autowired.Printer2">
+	
+	</bean>
+	
+	<!-- 문제 -->
+	
+	<bean id = "Keyboard" class="quiz07.quiz.Keyboard">
+	
+	</bean>
+	
+	<bean id = "Monitor" class="quiz07.quiz.Monitor">
+	
+	</bean>
+	
+	<bean id = "Mouse" class="quiz07.quiz.Mouse">
+	
+	</bean>
+	
+	<bean id = "Computer" class="quiz07.quiz.Computer">
+	
+	</bean>
+	
 </beans>
