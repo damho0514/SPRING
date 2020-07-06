@@ -14,7 +14,8 @@
 	
 		이름:<input type="text" name = "name"><br>
 		국어:<input type="text" name = "kor"><br>
-		영어:<input type="text" name = "eng"><br>
+		영어:<input type="text" name = "eng"><br
+		>
 		수학:<input type="text" name = "math"><br>
 		<button type="submit">제출</button>
 	</form>

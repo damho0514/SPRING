@@ -7,15 +7,16 @@ public class BoardVO {
 	private String name;
 	private String title;
 	private String content;
-	
+	private int num;
 	
 	public BoardVO() {}
 	
-	public BoardVO(String name, String title, String content) {
+	public BoardVO(String name, String title, String content, int num) {
 		super();
 		this.name = name;
 		this.title = title;
 		this.content = content;
+		this.num = num;
 	}
 
 	public String getName() {
@@ -40,6 +41,14 @@ public class BoardVO {
 
 	public void setContent(String content) {
 		this.content = content;
+	}
+
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
 	}
 
 	
